@@ -1,0 +1,17 @@
+{% extends "template.html" %}
+{% block title %}Exito!{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="col-sm-12">
+        <img class="img-fluid"  src="static/images/error.png" alt="">
+        <h1>Parece que tenemos un problema, pero no te preocupes! pronto lo solucionaremos, mientras tanto, puedes <a href="{{ url_for('home') }}"><b><u>regresar a la página principal<b></u></a> </h1>
+        </div>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}

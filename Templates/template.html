@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Este es un sitio de producto genial">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/grid.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animation.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <title>
+      {% block title %} {% endblock %}
+    </title>
+  </head> <!-- Cierra head -->
+  <body>
+    <nav class="nav fadeInFown navbar navbar-expand-lg navbar-light bg-dark mr-n1">
+      <a class="navbar-brand col-md-2" href="#">
+        <img width="100" height="50" src="static/images/Logolumitec.png" alt="home.html">
+      </a>
+      <button class="navbar-toggler ml-auto  bg-light " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-warning" href="{{ url_for('sale') }}">Nuestros Productos</a>
+          </li>
+          <li class="nav-item">
+            <a id="faqs" class="nav-link text-warning" href="{{ url_for('faqs') }}">Faqs</a>
+          </li>
+          <li class="nav-item">
+            <a id="tyc" class="nav-link text-warning" href="{{ url_for('tyc') }}">Términos y condiciones</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    {% block content%} {% endblock %}
+    <footer>
+      <div class="option">lumitec_am@hotmail.com</div>
+    </footer>
+    <!-- Fin de Footer -->
+
+    <!-- Script -->
+    <script src="scripts/script.js"></script>
+  </body> <!-- Cierra body -->
+
+</html> <!-- Cierra html -->

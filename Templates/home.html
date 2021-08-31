@@ -1,0 +1,65 @@
+{% extends "template.html" %}
+{% block title %}
+Lumitec
+{% endblock %}
+{% block content%}
+    <div class="content d-flex">
+      <div class="SobreNosotros col-md-6 mt-5 p-1">
+          <h1>
+              Sobre nosotros: 
+          </h1>
+          <h4 class="text-dark p-3 text-justify">Lumitec es una empresa familiar, nacida en el año 2017 en Adelía María, un pueblo ubicado al sur de la provincia de Córdoba, Argentina. Ofrecemos servicio técnico y venta presencial en <a href="https://www.google.com/maps/place/LUMITEC+Electricidad+%26+iluminaci%C3%B3n/@-33.6358874,-64.021467,15z/data=!4m5!3m4!1s0x0:0xbeb4294bebd212b1!8m2!3d-33.6358874!4d-64.021467"><b><u>Nuestra sucursal</b></u></a> y también venta online a través de nuestro sitio. </h4>
+        <div class="btns p-1">
+            <a href="sale.html"><button type="button" class="btn btn-warning">Ver Nuestro Catálogo</button></a>
+        </div>
+      </div>
+      <div class="centralimage col-md-6 mt-5 p-5  d-none d-sm-block d-none d-sm-block"> 
+          <img class="w-100 h-60"  src="static/images/Logolumitec.png" alt="">
+      </div>
+    </div>
+    <!-- Inicio productos -->
+    <div class="row justify-content-center">
+      <div class="col-sm-2"></div>
+      <div class="ubicacion col-sm-4 justify-content-center">
+          <div class="column">
+              <div class="col-sm-6">
+                      <img src="static/images/amaria.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-sm-6">
+                  <h3>Sucursal Adelia María</h3>
+              </div>
+          </div>
+          <br>
+          <div class="row">
+              <a href="https://www.google.com/maps/place/LUMITEC+Electricidad+%26+iluminaci%C3%B3n/@-33.6358874,-64.021467,15z/data=!4m5!3m4!1s0x0:0xbeb4294bebd212b1!8m2!3d-33.6358874!4d-64.021467"><button type="button" class="btn btn-warning" >Ver en el mapa</button></a>
+          </div>
+      </div>
+      <div class="ubicacion col-sm-4 justify-content-center">
+          <div class="column">
+              <div class="col-sm-6">
+                      <img src="static/images/rcuarto.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-sm-6">
+                <h3>Sucursal Río Cuarto</h3>
+            </div>
+          </div>
+          <br>
+          <div class="row ">
+              <a href="{{ url_for('error') }}"><button type="button" class="btn btn-warning">Ver en el mapa</button></a>
+          </div>
+      </div>
+  </div>
+  
+    <!-- Inicia menciones -->
+    <div class="carrousel col-md-12 text-center">
+      <h1 class="text.align-center p-5">Marcas</h1>
+      <h4>Trabajamos con las mejores marcas del mercado para ofrecerte productos de calidad a un precio áltamente accesible. </h4>
+      <div class="images d-flex ml">
+        <img class="w-25 h-15" src="static/images/mlogo1.png" alt="">
+        <img class="w-25 h-15" src="static/images/mlogo2.png" alt="">
+        <img class="w-25 h-15" src="static/images/mlogo3.png" alt="">
+        <img class="w-25 h-15" src="static/images/mlogo4.png" alt="">
+    </div>
+  </div>
+  </div>
+  {% endblock %}

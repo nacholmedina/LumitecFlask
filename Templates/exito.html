@@ -1,0 +1,17 @@
+{% extends "template.html" %}
+{% block title %}Exito!{% endblock %}
+
+{% block content %}
+</head>
+<body>
+    <div class="container">
+        <div class="col-sm-12">
+        <img class="img-fluid"  src="static/images/exito.png" alt="">
+        <h1>Felicidades! Ya adquiriste el producto, nos pondremos en contacto para coordinar la entrega o el retiro. Mientras tanto puedes <a href="{{ url_for('sale') }}"><b><u>seguir comprando<b></u></a> </h1>
+        </div>
+    </div>
+<br>
+<br>
+</body>
+</html>
+{% endblock %}
